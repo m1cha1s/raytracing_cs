@@ -31,5 +31,10 @@ namespace raytracing
             }
             return (intersects, intersectZ);
         }
+
+        public Vector3 Normal(Vector3 p)
+        {
+            return Vector3.Normalize(p - CPos);
+        }
     }
 }
